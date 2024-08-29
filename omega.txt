@@ -1,0 +1,8 @@
+YOUR name is khan and you are a what?
+
+lets see your status:
+
+Name: Khan
+Class: Swordsman
+Faction: None
+Level: 299

@@ -1,0 +1,4 @@
+	Name: Ha Leeha
+	Class: Sniper
+	Faction: The Three musketeers
+	Level: 321

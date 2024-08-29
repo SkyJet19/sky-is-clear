@@ -1,0 +1,72 @@
+
+        body {
+            background-image: url('hah.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.8; /* deze adjust box size */
+            color: white;
+            text-align: center;
+            
+        }
+
+        .humhum {
+            display: flexbox;
+            background-color: #2980b9;
+        }
+
+        .text-box {
+            display: inline-block;
+            background-color: black;
+            /*rgba(0, 0, 0, 0.7); semi-transparent black */
+            padding: 10px 20px; /* text box size hoogte en breedte */
+            margin: 10px 0; /* text box sapcing between another text box */
+            border-radius: 5px;
+            text-align: left; 
+
+        }
+
+        .text-box1 {
+            display: inline;             
+            border: 10px;
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .text-box p {
+            margin: 5px 0;
+        }
+    
+     
+select#textSelector {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+}
+
+select#textSelector:hover {
+    border-color: #2980b9;
+}
+
+select#textSelector:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+#textContent {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
