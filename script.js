@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <title>${selectedFile}</title>
                   <style>
                     body {
-                      background-image: url('hah.jpg');
+                      background-image: url('./hah.jpg');
                       background-size: cover;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
   function getBackgroundStyle(selectedFile) {
-    if (selectedFile === 'omega.txt') {
+    if (selectedFile === './omega.txt') {
       return 'linear-gradient(to bottom, #ff69b4, #ffe6cc)';      
-    } else if (selectedFile === 'humbledum.txt') {
+    } else if (selectedFile === './humbledum.txt') {
       return 'linear-gradient(to bottom, #4CAF50, #8BC34A)';
-    } else if (selectedFile === 'ohyeah.txt') {
+    } else if (selectedFile === './ohyeah.txt') {
       return 'linear-gradient(to bottom, #03A9F4, #2196F3)';
     } else {
       return ''; // default background style
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
   selector2.addEventListener('change', (e) => {
     const selectedValue = e.target.value;
     textBoxes.forEach((textBox) => {
-     if (selectedValue === 'omega.txt') {
+     if (selectedValue === './omega.txt') {
         textBox.style.background = 'linear-gradient(to bottom, #ff69b4, #ffe6cc)';        
-      } else if (selectedValue === 'humbledum.txt') {
+      } else if (selectedValue === './humbledum.txt') {
         textBox.style.background = 'linear-gradient(to bottom, #4CAF50, #8BC34A)';
-      } else if (selectedValue === 'ohyeah.txt') {
+      } else if (selectedValue === './ohyeah.txt') {
         textBox.style.background = 'linear-gradient(to bottom, #03A9F4, #2196F3)';
       }
     });
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   file299Button.addEventListener('click', () => {
     if (file299Contents.style.display === 'none' || file299Contents.style.display === '') {
-      fetch('file299.txt') // assuming you have a text file named file299.txt
+      fetch('./file299.txt') // assuming you have a text file named file299.txt
         .then(response => response.text())
         .then(text => {
           file299Contents.innerText = text;
